@@ -2,9 +2,7 @@
 
 #include <spherical-flame/processes.hpp>
 
-using namespace SphericalFlame;
-
-void run_process()
+void SphericalFlame::run_process()
 {
     std::cout << "Hello world" << std::endl;
 }
