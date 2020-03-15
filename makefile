@@ -3,8 +3,7 @@
 PROJECT_NAME := 'Spherical Flame'
 .DEFAULT_GOAL := help
 
-.PHONY: test linting build prepare-deploy view-logs help generate
-.PHONY: env-start env-stop env-recreate migrate bash shell
+.PHONY: test linting build help generate
 
 BUILD_FOLDER = build
 
