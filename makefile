@@ -12,7 +12,7 @@ init: ## Setup the enviroment and install needed programms
 	## TODO: install cmake also (currently pip failes)
 	pip3 install --user conan pytest
 
-test: pytest ## Run all tests in the project
+test: build gtest pytest ## Run all tests in the project
 
 linting: ## Check/Enforce Code-Style
 	echo Need to implement
@@ -21,8 +21,8 @@ build: generate ## Build project libraries, applications and tests
 	cmake --build $(BUILD_FOLDER)
 
 generate: ## Generate build system
+	conan install . -if $(BUILD_FOLDER) --build missing -s build_type=Debug -s compiler.libcxx=libstdc++11
 	cmake -S . -B $(BUILD_FOLDER)
-	conan install . -if $(BUILD_FOLDER)
 
 clean: ## Clean all build artifacts
 	rm -rf $(BUILD_FOLDER)
@@ -32,5 +32,8 @@ help: ## Display this help text
 
 pytest: ## Run the pytest suit
 	pytest
+
+gtest: ## Run Gtest
+	build/tests/gtest/bin/sf-gtest
 
 
