@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-PROJECT_NAME := 'Spherical Flame'
+PROJECT_NAME := 'Cmake Example'
 .DEFAULT_GOAL := help
 
 .PHONY: test linting build help generate

@@ -1,8 +1,8 @@
 #include <iostream>
 
-#include <spherical-flame/processes.hpp>
+#include <main-lib-project/processes.hpp>
 
-void SphericalFlame::run_process()
+void MainLib::run_process()
 {
     std::cout << "Hello world" << std::endl;
 }

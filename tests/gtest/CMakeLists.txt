@@ -5,4 +5,4 @@ conan_basic_setup()
 
 add_executable(sf-gtest test.cpp)
 
-target_link_libraries(sf-gtest PRIVATE spherical-flame ${CONAN_LIBS})
+target_link_libraries(sf-gtest PRIVATE main-lib-project-linux ${CONAN_LIBS})

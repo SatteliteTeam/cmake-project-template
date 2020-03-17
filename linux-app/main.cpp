@@ -1,10 +1,10 @@
 #include <iostream>
-#include <spherical-flame/processes.hpp>
+#include <main-lib-project/processes.hpp>
 
 int main(int argc, char const *argv[])
 {
     std::cout << "Hello from linux" << std::endl;
-    SphericalFlame::run_process();    
+    MainLib::run_process();    
     return 0;
 }
 

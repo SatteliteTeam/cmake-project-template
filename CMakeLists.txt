@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.11...3.16)
 
-project(SphericalFlame
+project(CmakeExample
     VERSION 0.1
     DESCRIPTION "a template project"
     LANGUAGES CXX)
@@ -20,7 +20,7 @@ endif()
 add_subdirectory(threadx-app)
 add_subdirectory(linux-app)
 add_subdirectory(otp)
-add_subdirectory(spherical-flame/src)
+# add_subdirectory(main-lib-project/src)
 
 # Testing only available if this is the main app
 # Emergency override MODERN_CMAKE_BUILD_TESTING provided as well
